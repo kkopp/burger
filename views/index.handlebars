@@ -8,12 +8,12 @@
                     {{#each burgers}}
                     {{#unless this.devoured}}
                     <div>
-                        <li>
-                            {{this.id}}. {{this.burger_name}}
+                        {{!-- <li>
+                            {{this.id}}. {{this.burger_name}} --}}
                             <form action="/burgers/{{this.id}}?_method=PUT" method="POST">
-                                <button type="submit" class='burgerAvailable'> Devour It! </button>
+                                <button type="submit" class='burgerAvailable'> {{this.burger_name}} </button>
                             </form>
-                        </li>
+                        {{!-- </li> --}}
                     </div>
                     {{/unless}}
                     {{/each}}
@@ -39,7 +39,7 @@
 
 <div class="row">
     <div class="col s12">
-        <form action="/burgers" method="POST">
+        <form class="newBurger" action="/burgers" method="POST">
             <input type="text" id="name" name="burger_name" placeholder="YUMMY">
             <button type="submit" class="addBurgerButton">Add New Burger</button>
         </form>

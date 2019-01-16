@@ -1,0 +1,37 @@
+
+ html {
+    background-color: #FFC04C;
+}
+
+body {
+    width: 75%;
+   margin: 0 auto; 
+
+   display: flex;
+   min-height: 100vh;
+   flex-direction: column;
+   background-color: orange;
+}
+
+h1 {
+    text-align: center;
+    font-size: 50px;
+}
+
+h2 {
+    text-align: center;
+}
+
+img {
+    margin: auto;
+}
+
+.newBurger {
+    padding: 10px 10px 50px 10px;
+    text-align: center;
+}
+
+.burgerAvailable {
+    font-size: 20px;
+
+}
