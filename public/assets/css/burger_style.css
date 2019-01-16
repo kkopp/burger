@@ -1,37 +1,42 @@
 
- html {
-    background-color: #FFC04C;
-}
-
 body {
     width: 75%;
    margin: 0 auto; 
-
    display: flex;
    min-height: 100vh;
    flex-direction: column;
-   background-color: orange;
+   background-color: #FBD587;
 }
 
 h1 {
     text-align: center;
-    font-size: 50px;
+    font-size: 45px;
+    font-family: 'Amatic SC', cursive;
 }
 
 h2 {
     text-align: center;
+    font-size: 35px;
+    font-family: 'Amatic SC', cursive;
 }
 
 img {
     margin: auto;
+    padding: 10px;
 }
 
 .newBurger {
     padding: 10px 10px 50px 10px;
     text-align: center;
-}
-
-.burgerAvailable {
+    font-family: 'Amatic SC', cursive;
     font-size: 20px;
+}
+
+.burgerAvail, .burgerEaten {
+    font-size: 20px;
+    padding: 5px 0;
+    text-align: center;
+    font-family: 'Amatic SC', cursive;
 
 }
+

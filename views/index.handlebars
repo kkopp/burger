@@ -11,7 +11,7 @@
                         {{!-- <li>
                             {{this.id}}. {{this.burger_name}} --}}
                             <form action="/burgers/{{this.id}}?_method=PUT" method="POST">
-                                <button type="submit" class='burgerAvailable'> {{this.burger_name}} </button>
+                                <div class="burgerAvail">{{this.burger_name}} - <button type="submit"> Eat Me! </button></div>
                             </form>
                         {{!-- </li> --}}
                     </div>
@@ -21,6 +21,7 @@
             </div>
 
             <div class="col s6">
+                <h2>Ate-Da-Burger</h2>
                 {{#each burgers}}
                 {{#if this.devoured}}
                 <div class='burgerEaten'>
@@ -35,13 +36,13 @@
     </div>
 </main>
 
-<h2>Add A Burger Option</h2>
+<h2>Add-Da-Burger</h2>
 
 <div class="row">
     <div class="col s12">
         <form class="newBurger" action="/burgers" method="POST">
-            <input type="text" id="name" name="burger_name" placeholder="YUMMY">
-            <button type="submit" class="addBurgerButton">Add New Burger</button>
+            <input type="text" id="name" name="burger_name" placeholder="drool...">
+            <button type="submit" class="addBurgerButton"> Ready to Devour! </button>
         </form>
     </div>
 </div>
